@@ -19,7 +19,8 @@
     xclip
 
     zls
-    zigpkgs.master
+    zig
+    #zigpkgs.master
 
     # Programming Utils
     gnumake42
@@ -75,6 +76,8 @@
         "zig.zls.path" = "zls";
         "zig.initialSetupDone" = "true";
         "workbench.iconTheme" = "material-icon-theme";
+        "explorer.confirmDragAndDrop" = "false";
+        "explorer.confirmDelete" = "false";
       };
     };
 
