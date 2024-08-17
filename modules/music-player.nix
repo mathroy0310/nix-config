@@ -11,10 +11,10 @@
   ];
   
   home.file = { 
-    ".config/ncmpcpp/config".source = ../dotfiles/ncmpcpp/config.conf;
-    ".config/ncmpcpp/song_change.sh".source = ../dotfiles/ncmpcpp/song_change.sh;
-    ".config/ncmpcpp/bindings".source = ../dotfiles/ncmpcpp/bindings.conf;
-    ".config/mpd/mpd.conf".source = ../dotfiles/mpd/mpd.conf;
+    ".config/ncmpcpp/config".source = ../config/ncmpcpp/config.conf;
+    ".config/ncmpcpp/song_change.sh".source = ../config/ncmpcpp/song_change.sh;
+    ".config/ncmpcpp/bindings".source = ../config/ncmpcpp/bindings.conf;
+    ".config/mpd/mpd.conf".source = ../config/mpd/mpd.conf;
   };
 
   services = {
