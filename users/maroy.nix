@@ -14,11 +14,12 @@
     neofetch
     cpufetch
     valgrind
+    ncdu
 
     xclip
 
+    zls
     zigpkgs.master
-    ncdu
 
     # Programming Utils
     gnumake42
@@ -54,6 +55,24 @@
     fastfetch.enable = true;
     starship.enable = true;
 
+    vscode = {
+      enable = true;
+      extensions = with pkgs.vscode-extensions; [
+        ziglang.vscode-zig
+        jnoortheen.nix-ide
+        vadimcn.vscode-lldb
+        ms-vscode.cpptools
+        github.github-vscode-theme
+        ms-vscode.cpptools-extension-pack
+      ];
+
+      userSettings = {    
+        "files.autoSave" = "afterDelay";
+        "files.autoSaveDelay" = "1000" ;
+        "workbench.colorTheme" = "GitHub Dark Default";
+        
+      };
+    };
 
     direnv = {
       enable = true;
@@ -65,7 +84,7 @@
       enable = true;    
       lfs.enable = true;
       userEmail = "mathroy0310@gmail.com";
-      userName = "mathroy0310";
+      userName = "mathroy0310"; 
       extraConfig = {
         init.defaultBranch = "master";
       };
