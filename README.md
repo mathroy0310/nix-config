@@ -12,3 +12,6 @@ TODO hyprland...
 
 
 TODO fix impure (import <nixpkgs>)
+
+
+test
