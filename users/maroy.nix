@@ -32,9 +32,6 @@
   ];
 
   home.file = {
-    ".config/hypr/hyprland.conf".source = ../config/hypr/hyprland.conf;
-    ".config/eww/eww.scss".source = ../config/eww/eww.scss;
-
     ".config/kitty/kitty.conf".source = ../config/kitty/kitty.conf;
     ".config/kitty/theme.conf".source = ../config/kitty/github_dark.conf;
     ".config/ncdu/config".source = ../config/ncdu;
@@ -67,13 +64,10 @@
     git = {
       enable = true;    
       lfs.enable = true;
-      userEmail = "maroy0310@gmail.com";
-      userName = "maroy0310";
+      userEmail = "mathroy0310@gmail.com";
+      userName = "mathroy0310";
       extraConfig = {
         init.defaultBranch = "master";
-        commit.gpgsign = true;
-        gpg.format = "ssh";
-        user.signingKey = "~/.ssh/id_ed25519_sign.pub";
       };
     };
 

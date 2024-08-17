@@ -19,7 +19,6 @@
 					inherit system;
 					modules = [ 
 						./configuration.nix 
-						#	./modules/hyprland.nix
 					];
 			};
 		
