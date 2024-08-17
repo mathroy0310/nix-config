@@ -35,8 +35,6 @@ ahead = "↑"
 behind = "↓"
 diverged = "⇵"
 up_to_date = ""
-untracked = "??"    
-disabled = false
 
 # Setting time on the prompt
 
@@ -70,6 +68,13 @@ disabled = true
 show_always = true
 
 [git_branch]
-symbol = " "
+symbol = " "   
 style = "bold italic red"
 format = "[git:](bold blue)[\\(](bold blue)[$branch(:$remote_branch)]($style)[\\)](bold blue) "
+
+[zig]
+symbol = " "
+detect_files = ['build.zig.zon']
+
+[c]
+symbol = " "

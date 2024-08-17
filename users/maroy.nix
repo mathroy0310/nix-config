@@ -63,6 +63,7 @@
         vadimcn.vscode-lldb
         ms-vscode.cpptools
         github.github-vscode-theme
+        pkief.material-icon-theme 
         ms-vscode.cpptools-extension-pack
       ];
 
@@ -70,7 +71,10 @@
         "files.autoSave" = "afterDelay";
         "files.autoSaveDelay" = "1000" ;
         "workbench.colorTheme" = "GitHub Dark Default";
-        
+        "zig.path" = "zig";
+        "zig.zls.path" = "zls";
+        "zig.initialSetupDone" = "true";
+        "workbench.iconTheme" = "material-icon-theme";
       };
     };
 
