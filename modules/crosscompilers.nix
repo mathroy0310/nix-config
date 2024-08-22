@@ -15,5 +15,7 @@ in
 
     cross_x86_64.buildPackages.gcc
     cross_i686.buildPackages.gcc
+
+    parted # for partprobe  
   ];
 } 

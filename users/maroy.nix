@@ -23,8 +23,7 @@
     #zigpkgs.master
 
     # Programming Utils
-    gnumake42
-              
+    gnumake42  
     gdb
     clang
     lld
@@ -52,11 +51,11 @@
     htop.enable = true;
     btop.enable = true;
     bat.enable = true;
-    ripgrep.enable = true;
+    ripgrep.enable = true;      
     fastfetch.enable = true;
     starship.enable = true;
 
-    vscode = {
+    vscode = {        
       enable = true;
       extensions = with pkgs.vscode-extensions; [
         ziglang.vscode-zig
@@ -66,7 +65,8 @@
         github.github-vscode-theme
         pkief.material-icon-theme 
         ms-vscode.cpptools-extension-pack
-      ];
+        xaver.clang-format
+      ];    
 
       userSettings = {    
         "files.autoSave" = "afterDelay";
@@ -76,8 +76,12 @@
         "zig.zls.path" = "zls";
         "zig.initialSetupDone" = "true";
         "workbench.iconTheme" = "material-icon-theme";
-        "explorer.confirmDragAndDrop" = "false";
-        "explorer.confirmDelete" = "false";
+        "explorer.confirmDragAndDrop" = false;
+        "explorer.confirmDelete" = false;
+        "editor.formatOnSave" = true;
+        "explorer.compactFolders" = false;
+        "clang-format.executable" = "clang-format";
+        "[cpp]"."editor.defaultFormatter"= "xaver.clang-format";
       };
     };
 
