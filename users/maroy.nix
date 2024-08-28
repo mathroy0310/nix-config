@@ -5,7 +5,6 @@
 
   home.stateVersion = "24.05";
 
-
   home.packages = with pkgs; [
     discord
     libgcc
@@ -28,6 +27,9 @@
     clang
     lld
     clang-tools
+
+    lazygit
+    lazydocker
 
 
   ];
@@ -59,7 +61,6 @@
       enable = true;
       extensions = with pkgs.vscode-extensions; [
         ziglang.vscode-zig
-        jnoortheen.nix-ide
         vadimcn.vscode-lldb
         ms-vscode.cpptools
         github.github-vscode-theme
@@ -82,6 +83,7 @@
         "explorer.compactFolders" = false;
         "clang-format.executable" = "clang-format";
         "[cpp]"."editor.defaultFormatter"= "xaver.clang-format";
+        "[c]"."editor.defaultFormatter"= "xaver.clang-format";
       };
     };
 
@@ -115,7 +117,8 @@
         ls = "eza";
         l = "eza -lab"; 
         cat = "bat";
-        lg = "lazygit";
+        lzg = "lazygit";
+        lzd = "lazydocker";
         mp = "ncmpcpp";
       };
     };

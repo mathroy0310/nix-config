@@ -100,7 +100,7 @@
   users.users.maroy = {
     isNormalUser = true;
     description = "maroy";
-    extraGroups = [ "networkmanager" "wheel" "audio" "video" "libvirtd" ];
+    extraGroups = [ "networkmanager" "wheel" "audio" "video" "libvirtd" "docker" ];
     packages = with pkgs; [
       kdePackages.kate
     #  thunderbird
@@ -120,6 +120,15 @@
 
   # Install firefox.
   programs.firefox.enable = true;
+
+  # docker
+  virtualisation.docker = {
+      enable = true;
+      rootless = {
+      enable = true;
+      setSocketVariable = true;
+    };
+  };
 
   # Virtualisation
   virtualisation.libvirtd.enable = true;
